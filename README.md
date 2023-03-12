@@ -1,16 +1,33 @@
 # Projektmall
 
+Nyckelord: Filhantering, stränghantering, tid och datum
+
 ## Uppgiften
 
 ### Lydelse
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac tincidunt justo. Vivamus eget malesuada felis. Etiam euismod mollis lobortis. Etiam at pellentesque diam. Donec suscipit nulla arcu, consequat iaculis neque maximus non. Proin laoreet tortor nulla, in pharetra lorem laoreet id. Vestibulum condimentum, neque vel suscipit tempor, felis erat consectetur est, a bibendum metus enim et odio. Vivamus laoreet eu eros id efficitur. Nunc ac urna gravida, dignissim libero vel, pellentesque dui. Maecenas arcu enim, venenatis eu purus id, condimentum posuere lorem. Nunc pharetra, elit at convallis ultricies, nunc risus fermentum nisl, sit amet molestie nisl urna eu arcu. Nunc molestie elit ullamcorper nisl pharetra dignissim. Praesent pretium blandit ornare.
+Du ska skriva ett program som hanterar konton och inloggning. Programmet ska kunna:
 
-### Exempel
+- Skapa konton
+- Logga in på konton och därefter byta lösenord
 
-Duis lobortis porta orci, et scelerisque diam ornare nec. Pellentesque eget suscipit ligula, et ultrices tortor. Ut congue, tellus in rutrum interdum, massa est convallis eros, at blandit quam augue vitae libero. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed nisi libero, pretium vel tincidunt mollis, accumsan at eros. Nunc eu congue ex, quis sodales enim. Aliquam a sem hendrerit, vehicula enim ut, maximus risus. Aenean ac lobortis justo. Aenean molestie vehicula dolor, at ullamcorper nisi eleifend a. Quisque egestas est vulputate, sagittis leo id, fermentum ante. Pellentesque cursus nulla nibh, id luctus diam laoreet in.
+Programmet ska simulera inloggning enligt exemplet nedan.
+
+![image](https://user-images.githubusercontent.com/101513815/224575617-1aea14db-fd1e-461b-bb76-13d37fd0f73c.png)
+
+Lösenorden måste kodas med någon metod som du själv får uppfinna, du ska alltså göra en egen krypteringsalgoritm av något slag, som även ska gå att avkryptera. Dessa krypterade lösenord ska skrivas ner på fil med användarnamnet. Användaren ska även kunna ändra sitt lösenord genom att ange komandet "passwd". Det ska då fungera som nedan.
+
+![image](https://user-images.githubusercontent.com/101513815/224575680-4b872db8-9460-4e2c-96b4-1c63f310513e.png)
+
+Skriver användaren fel vid upprepningen av ett nytt lösenord ska ett felmeddelande skrivas ut och bytet av lösenord verkställs ej. Om lösenordet ändras ska det även ändras på den sparade filen.
 
 ### Krav för olika betyg
+
+För bedömningen C så finner du kraven här ovan.
+
+För bedömningen A behöver du lägga till följande:
+
+Alla inloggningsförsök (både lyckade och misslyckade) samt lösenordsbyten (tidpunkt för bytet, om det lyckades eller misslyckades samt vilket konto det gällde) ska skrivas ner på fil i en log.
 
 ## Dokumentation & Planering
 
@@ -31,3 +48,7 @@ I första stadiet av projektet bör du även skissa upp ett flödesschema i för
 ## Författare
 
 Niclas Lund
+
+## Disclaimer
+
+Uppgiften (eller inspiration till den) är ärligt stulen från EECS-skolan (gamla CSC) och kursen DD1314.
